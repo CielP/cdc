@@ -1,0 +1,22 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "DB-A (Source)",
+      "Group": "CDC",
+      "Host": "db-a",
+      "Port": 5432,
+      "MaintenanceDB": "sourcedb",
+      "Username": "postgres",
+      "SSLMode": "prefer"
+    },
+    "2": {
+      "Name": "DB-B (Target)",
+      "Group": "CDC",
+      "Host": "db-b",
+      "Port": 5432,
+      "MaintenanceDB": "targetdb",
+      "Username": "postgres",
+      "SSLMode": "prefer"
+    }
+  }
+}
