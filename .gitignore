@@ -1,2 +1,18 @@
+# Flink JAR dependencies
 flink/lib/*.jar
+
+# Claude Code
 .claude/settings.local.json
+
+# macOS
+.DS_Store
+
+# Environment files
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

@@ -82,8 +82,6 @@ docker exec -it db-a psql -U postgres -d sourcedb \
 
 # 6. Re-register the connector (connector-init runs once; do it manually)
 docker exec connector-init sh /register-connector.sh
-# or
-curl -X POST http://localhost:8083/connectors -H 'Content-Type: application/json' -d @debezium/connector-config.json
 
 # 7. Resubmit the Flink job
 docker exec -it flink-jobmanager ./bin/sql-client.sh -f /opt/flink/usrlib/init.sql
